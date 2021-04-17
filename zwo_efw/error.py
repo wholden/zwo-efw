@@ -19,8 +19,6 @@ class EFWError(IOError):
         self.errno = errno
 
     def __str__(self):
-    #     s = '[EFWError {}] {}'.format(self.errno, self.strerror)
-
         return f'EFWError {self.errno}: {ERROR_CODES[self.errno]}'
 
     @classmethod
