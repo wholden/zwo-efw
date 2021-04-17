@@ -24,5 +24,5 @@ python setup.py install
 The drivers must be downloaded directly from ZWO. Choose the "Developers" tab and download the SDK. Currently only the Windows DLL is supported, but if someone creates a github issue it wouldn't be too hard for me to add linux/mac support.
 https://astronomy-imaging-camera.com/software-drivers
 
-The downloaded "EFW_filter.dll" file should be placed in the "/lib" folder.
+The downloaded "EFW_filter.dll" file should be placed in the "zwo_efw/lib" folder.
 
