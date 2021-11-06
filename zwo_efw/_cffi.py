@@ -7,6 +7,25 @@ import pathlib
 ffi = cffi.FFI()
 
 ffi.cdef("""
+/**************************************************
+this is the ZWO filter wheel EFW SDK
+any question feel free contact us:yang.zhou@zwoptical.com
+
+here is the suggested procedure.
+
+--> EFWGetNum
+--> EFWGetID for each filter wheel
+
+--> EFWGetProperty
+--> EFWOpen
+--> EFWGetPosition
+--> EFWSetPosition
+	...
+--> EFWClose
+
+***************************************************/
+
+
 #define EFW_ID_MAX 128
 
 typedef struct _EFW_INFO
@@ -36,6 +55,7 @@ typedef struct _EFW_ID{
 }EFW_ID;
 
 typedef EFW_ID EFW_SN;
+
 
 /***************************************************************************
 Descriptions:
@@ -284,6 +304,8 @@ EFW_ERROR_NOT_SUPPORTED: the firmware does not support setting alias
 EFW_SUCCESS: operation succeeds
 ***************************************************************************/
 EFW_ERROR_CODE EFWSetID(int ID, EFW_ID alias);
+
 """)
 
-efw = ffi.dlopen(str(pathlib.Path(__file__).parent / 'lib/EFW_filter.dll'))
+
+efw = ffi.dlopen(str(pathlib.Path(__file__).parent / 'lib/libEFWFilter.so.1.7'))
