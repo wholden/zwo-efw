@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# manually added
+zwo_efw/lib/EFW_filter.h
+zwo_efw/lib/_efw_api.c
+zwo_efw/lib/_efw_api.o
+zwo_efw/lib/libEFWFilter.a
+zwo_efw/lib/libEFWFilter.so.1.7

@@ -1,1 +1,0 @@
-This is the folder where the DLL `EFW_filter.dll` should be placed.

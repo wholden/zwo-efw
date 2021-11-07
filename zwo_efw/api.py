@@ -1,4 +1,5 @@
-from ._cffi import efw, ffi
+from .lib._efw_api import ffi
+from .lib._efw_api import lib as efw
 from .error import check_error
 
 
