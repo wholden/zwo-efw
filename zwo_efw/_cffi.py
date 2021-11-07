@@ -307,5 +307,5 @@ EFW_ERROR_CODE EFWSetID(int ID, EFW_ID alias);
 
 """)
 
-
+ffi.dlopen('udev')
 efw = ffi.dlopen(str(pathlib.Path(__file__).parent / 'lib/libEFWFilter.so.1.7'))
