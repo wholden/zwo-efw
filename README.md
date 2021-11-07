@@ -23,10 +23,10 @@ git clone https://github.com/wholden/zwo-efw.git
 python setup.py install
 ```
 
-The drivers must be downloaded directly from ZWO. Choose the "Developers" tab and download the SDK. Currently only the Windows DLL is supported, but if someone creates a github issue it wouldn't be too hard for me to add linux/mac support.
+The drivers must be downloaded directly from ZWO. Choose the "Developers" tab and download the SDK for "Linux & Mac" EFW.
 https://astronomy-imaging-camera.com/software-drivers
 
-The downloaded "EFW_filter.dll" file should be placed in the "zwo_efw/lib" folder.
+Extract and place the `libEFWFilter.so.1.7`" and `EFW_Filter.h` files in the "zwo_efw/lib" folder. Then follow the instructions in the next section.
 
 ## Build Instructions for Linux
 1. For Linux to work with CFFI, we need to be able to link to udev. This requires that the udev shared library be installed. 
