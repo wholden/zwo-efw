@@ -36,3 +36,6 @@ Extract and place the `libEFWFilter.so.1.7`" and `EFW_Filter.h` files in the "zw
    * This just requires running the command below which will generate `_efw_api.c` and `_efw_api.o` and a file like `_efw_api.cpython-37m-x86_64-linux-gnu.so`
    * The command to run is:
       * `python efw_build.py` 
+
+## Working with raspberry pi (armv8)
+While the above tentatively worked for me on an x64 Ubuntu system, additional steps are needed for working with raspberry pi. Refer to [this issue](https://github.com/wholden/zwo-efw/issues/1) for detail on how user @APinto-DTx got it working.
