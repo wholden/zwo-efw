@@ -26,3 +26,10 @@ https://astronomy-imaging-camera.com/software-drivers
 
 The downloaded "EFW_filter.dll" file should be placed in the "zwo_efw/lib" folder.
 
+## Linux support
+Linux requires a tweaked approach to using CFFI due to the compiled binaries from ZWO needing linkage to shared libraries (e.g. udev). See the [linux](https://github.com/wholden/zwo-efw/tree/linux) branch for more detail.
+
+### Raspberry Pi (armv8)
+Additional steps are needed for working with raspberry pi (armv8).
+
+Refer to [this issue](https://github.com/wholden/zwo-efw/issues/1) for detail on how user @APinto-DTx got it working.
