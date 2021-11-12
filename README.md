@@ -40,4 +40,25 @@ Extract and place the `libEFWFilter.so.1.7`" and `EFW_Filter.h` files in the "zw
 ## Working with raspberry pi (armv8)
 While the above tentatively worked for me on an x64 Ubuntu system, additional steps are needed for working with raspberry pi (armv8). 
 
+### Build/Install Package
+
+```bash
+python setup.py sdist
+pip install ./dist/zwo_efw-1.0.tar.gz
+```
+
+### Link Libraries
+
+```bash
+sudo vi /etc/ld.so.conf
+```
+
+At this configuration file please add the path to the `lib` folder of zwo_efw (e.g. `/PYTHON_VENV_PATH/lib/python3.7/site-packages/zwo_efw/lib`). Then run:
+
+
+```bash
+ldconfig
+```
+
+ ---
 Refer to [this issue](https://github.com/wholden/zwo-efw/issues/1) for detail on how user @APinto-DTx got it working.
