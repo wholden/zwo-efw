@@ -38,7 +38,7 @@ Extract and place the `libEFWFilter.so.1.7`" and `EFW_Filter.h` files in the "zw
       * `python efw_build.py` 
 
 ## Working with raspberry pi (armv8)
-While the above tentatively worked for me on an x64 Ubuntu system, additional steps are needed for working with raspberry pi (armv8). 
+While the above worked for me on an x64 Ubuntu system, additional steps are needed for working with raspberry pi (armv8). 
 
 ### Build/Install Package
 
